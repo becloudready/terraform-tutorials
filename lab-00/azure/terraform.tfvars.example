@@ -1,0 +1,5 @@
+# Azure variables file
+# Uncomment and set values before running terraform apply
+
+# location = "Canada Central"
+# environment = "dev"

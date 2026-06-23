@@ -1,0 +1,103 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Cache directories
+.cache/
+*.cache
+.venv
+venv/
+env/
+ENV/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+*.iml
+
+# Security/Sensitive files
+*.key
+*.pem
+*.ppk
+*.p8
+*.p12
+*.pfx
+*.crt
+*.cer
+*.pub
+ssh_keys/
+private_keys/
+credentials.json
+.aws/credentials
+.aws/config
+~/.ssh
+secrets.json
+.env
+.env.local
+.env.*.local
+
+# Ansible
+*.retry
+.ansible/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+
+# Jenkins
+jenkins_home/
+.jenkins/
+
+# Backup files
+*.backup
+*.bckp
+*.old
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z

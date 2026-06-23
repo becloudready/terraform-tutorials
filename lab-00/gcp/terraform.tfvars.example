@@ -1,0 +1,6 @@
+# GCP variables file
+# Uncomment and set values before running terraform apply
+
+# gcp_project_id = "your-gcp-project-id"
+# gcp_region = "northamerica-central1"
+# environment = "dev"
