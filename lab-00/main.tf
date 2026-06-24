@@ -32,7 +32,7 @@ data "aws_ami" "amazon_linux_2" {
 
 # Custom Security Group following best practices
 resource "aws_security_group" "web" {
-  name        = "sg-web-secure"
+  name        = "web-secure"
   description = "Security group with restricted inbound access - only from authorized IP"
 
   # Inbound rule: SSH only from authorized IP
@@ -63,7 +63,7 @@ resource "aws_security_group" "web" {
 
 resource "aws_instance" "web" {
   ami            = data.aws_ami.amazon_linux_2.id
-  instance_type  = "t2.micro"
+  instance_type  = "t3.micro"
   vpc_security_group_ids = [aws_security_group.web.id]
   
   # Best practice: Enable EBS encryption by default
